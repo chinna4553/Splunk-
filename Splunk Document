@@ -182,3 +182,15 @@ Data Inconsistencies: Address issues with missing or inconsistent data.
 Model Overfitting/Underfitting: Use techniques like cross-validation and regularization to address model performance issues.
 Solutions and Workarounds
 Error Messages: Interpret and resolve common error messages in Splunk MLTK.
+Performance Bottlenecks: Identify and address performance issues during model training and deployment.
+11. Appendices
+Glossary of Terms
+Feature: An individual measurable property of the data.
+Label: The target variable in supervised learning.
+Overfitting: A model that performs well on training data but poorly on new data.
+Underfitting: A model that fails to capture the underlying trend in the data.
+Additional Resources
+Splunk Documentation: Official Splunk documentation and user guides.
+Machine Learning Tutorials: Online tutorials and courses on machine learning.
+Community Forums: Splunk community forums for user discussions and support.
+By following this detailed structure, you can create a comprehensive and informative document for the Splunk Machine Learning Toolkit, helping users to effectively leverage its capabilities for their data analysis and machine learning needs.
