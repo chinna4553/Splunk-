@@ -1,0 +1,39 @@
+<dashboard>
+  <form>
+    <!-- Dropdown 1 (Dynamic Values) -->
+    <input type="dropdown" token="dropdown1_token">
+      <label>Dropdown 1</label>
+      <dynamic>true</dynamic>
+      <search>
+        <!-- Your search for dynamic values in dropdown1 -->
+        <query>YOUR_SEARCH_QUERY_FOR_DROPDOWN1</query>
+      </search>
+    </input>
+
+    <!-- Dropdown 2 (Static Values Filtered by Dropdown 1) -->
+    <input type="dropdown" token="dropdown2_token" searchWhenChanged="true">
+      <label>Dropdown 2</label>
+      <choice value="A" token="dropdown2_A">A</choice>
+      <choice value="B" token="dropdown2_B">B</choice>
+      <choice value="C" token="dropdown2_C">C</choice>
+      <choice value="D" token="dropdown2_D">D</choice>
+      <depends>
+        <!-- Dependency based on Dropdown 1 -->
+        <condition token="dropdown1_token">A</condition>
+        <condition token="dropdown1_token">B</condition>
+        <condition token="dropdown1_token">C</condition>
+        <condition token="dropdown1_token">D</condition>
+      </depends>
+    </input>
+
+    <!-- Example Panel to Display Results -->
+    <panel>
+      <table>
+        <search>
+          <!-- Use the tokens in your main search -->
+          <query>YOUR_SEARCH | WHERE field1="$dropdown1_token$" AND field2="$dropdown2_token$"</query>
+        </search>
+      </table>
+    </panel>
+  </form>
+</dashboard>
