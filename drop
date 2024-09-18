@@ -1,0 +1,41 @@
+
+<input type="dropdown" token="tokSplit" searchWhenChanged="true">
+  <label>Dashboard Links</label>
+
+  <!-- Default option -->
+  <choice value="ALL">ALL</choice>
+
+  <!-- Conditional dropdown options based on token from 'auto' -->
+  <choice value="C Drive Housekeeping">
+    <depends>
+      <condition token="auto">Automation</condition>
+    </depends>
+    C Drive Housekeeping
+  </choice>
+  
+  <choice value="Physical Status Check">
+    <depends>
+      <condition token="auto">Automation</condition>
+    </depends>
+    Physical Status Check
+  </choice>
+
+  <choice value="Raid Status Check">
+    <depends>
+      <condition token="auto">Automation</condition>
+    </depends>
+    Raid Status Check
+  </choice>
+
+  <choice value="ESXI Evergreening Automation">
+    <depends>
+      <condition token="auto">Automation</condition>
+    </depends>
+    ESXI Evergreening Automation
+  </choice>
+  
+  <!-- Add the rest of your choices here, applying the same depends logic -->
+
+  <!-- Default value -->
+  <default>Physical Status Check</default>
+</input>
