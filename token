@@ -1,0 +1,21 @@
+<single>
+   <title>Tpam Avoided</title>
+   <search>
+       <query>your_search_query_here</query>
+   </search>
+   <option name="valueField">tpam_avoided</option>
+   <option name="underLabel">true</option>
+   <option name="drilldown">none</option>
+   <format>
+       <html>
+         <style>
+           .tpam-avoided-value {
+             color: #ff0000;  /* Replace this with your desired color code */
+             font-weight: bold;
+             font-size: 24px;
+           }
+         </style>
+         <div class="tpam-avoided-value">$tpam_avoided_value$</div>
+       </html>
+   </format>
+</single>
