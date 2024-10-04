@@ -1,0 +1,34 @@
+<dashboard>
+    <form>
+        <!-- Inputs can be added here -->
+    </form>
+
+    <!-- Base Search -->
+    <search name="base_search">
+        <query>
+            <![CDATA[
+            | your_base_search_here
+            | stats count as result_count
+            ]]>
+        </query>
+        <done>
+            <set token="base_result_count">$result.result_count$</set>
+        </done>
+    </search>
+
+    <!-- First panel, hidden if result count is 0 -->
+    <panel depends="$base_result_count$" condition="$base_result_count$ > 0">
+        <title>Base Search Results Panel</title>
+        <table>
+            <search ref="base_search"/>
+        </table>
+    </panel>
+
+    <!-- Another panel, also using the base search, hidden if result count is 0 -->
+    <panel depends="$base_result_count$" condition="$base_result_count$ > 0">
+        <title>Additional Panel from Base Search</title>
+        <table>
+            <search ref="base_search"/>
+        </table>
+    </panel>
+</dashboard>
