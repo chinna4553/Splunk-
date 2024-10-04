@@ -1,0 +1,47 @@
+<dashboard>
+    <form>
+        <!-- Inputs can be added here -->
+    </form>
+
+    <!-- First search for Panel 1 -->
+    <search name="search1">
+        <query>
+            <![CDATA[
+            | your_search_here_1
+            | stats count as result_count_1
+            ]]>
+        </query>
+        <done>
+            <set token="result_count_1">$result.result_count_1$</set>
+        </done>
+    </search>
+
+    <!-- Second search for Panel 2 -->
+    <search name="search2">
+        <query>
+            <![CDATA[
+            | your_search_here_2
+            | stats count as result_count_2
+            ]]>
+        </query>
+        <done>
+            <set token="result_count_2">$result.result_count_2$</set>
+        </done>
+    </search>
+
+    <!-- Panel 1 shown only if result_count_1 > 0 -->
+    <panel depends="$result_count_1$" condition="$result_count_1$ > 0">
+        <title>Panel 1</title>
+        <table>
+            <search ref="search1"/>
+        </table>
+    </panel>
+
+    <!-- Panel 2 shown only if result_count_2 > 0 -->
+    <panel depends="$result_count_2$" condition="$result_count_2$ > 0">
+        <title>Panel 2</title>
+        <table>
+            <search ref="search2"/>
+        </table>
+    </panel>
+</dashboard>
