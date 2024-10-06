@@ -1,0 +1,66 @@
+<!-- Dropdown for Token A (Populated by a search) -->
+<input type="dropdown" token="A" searchWhenChanged="true">
+    <label>Select Data Range (Automation or DataCollection)</label>
+    <default>1</default>  <!-- Set a default value to show Automation by default -->
+    <search>
+        <query>
+            | your_search_query_here | table A_field  <!-- Replace with your search query -->
+        </query>
+    </search>
+    <fieldForLabel>A_field</fieldForLabel>  <!-- Label for dropdown -->
+    <fieldForValue>A_field</fieldForValue>  <!-- Value assigned to Token A -->
+</input>
+
+<!-- Panels 1-5 (Automation) -->
+<panel>
+    <title>Automation Panel 1</title>
+    <conditional dependsOn="A" condition="in">
+        <param>1</param>
+        <param>2</param>
+        <param>3</param>
+        <param>4</param>
+        <param>5</param>
+    </conditional>
+    <!-- Panel content for Automation 1 -->
+</panel>
+
+<panel>
+    <title>Automation Panel 2</title>
+    <conditional dependsOn="A" condition="in">
+        <param>1</param>
+        <param>2</param>
+        <param>3</param>
+        <param>4</param>
+        <param>5</param>
+    </conditional>
+    <!-- Panel content for Automation 2 -->
+</panel>
+
+<!-- Repeat for Automation Panels 3, 4, and 5 -->
+
+<!-- Panels 6-10 (DataCollection) -->
+<panel>
+    <title>DataCollection Panel 6</title>
+    <conditional dependsOn="A" condition="in">
+        <param>6</param>
+        <param>7</param>
+        <param>8</param>
+        <param>9</param>
+        <param>10</param>
+    </conditional>
+    <!-- Panel content for DataCollection 6 -->
+</panel>
+
+<panel>
+    <title>DataCollection Panel 7</title>
+    <conditional dependsOn="A" condition="in">
+        <param>6</param>
+        <param>7</param>
+        <param>8</param>
+        <param>9</param>
+        <param>10</param>
+    </conditional>
+    <!-- Panel content for DataCollection 7 -->
+</panel>
+
+<!-- Repeat for DataCollection Panels 8, 9, and 10 -->
