@@ -1,0 +1,84 @@
+Here is the corrected version of the content, along with some improvements for clarity:
+
+
+---
+
+Newly Prepared Dashboards in RRE - Test Ops Team:
+
+1. Automation Telemetry Splunk Dashboard:
+This dashboard is used for monitoring multiple automations and data collections in one view. It includes 16 automations and 9 data collections, covering multiple platforms such as Windows, Linux, Citrix, and APL. The automations and data collections include:
+
+SCOM Agent Hygiene
+
+ARC / C Drive Housekeeping
+
+ESXi Build / Rebuild Automation
+
+ESXi Health Check Automation
+
+ESXi Maintenance Mode Automation
+
+ESXi Patch / Upgrade Automation
+
+Linux Physical Status Check
+
+Linux RPM Hung Fix
+
+Linux Raid Status Check
+
+Linux Timeout Fix
+
+MSSQL Self-Healing
+
+Orcl Agent Status
+
+Perfmon Baseline Setup
+
+PowerShell Execution Policies
+
+Storage Path Checks (Windows, Linux)
+
+SSL Version
+
+Temp File System
+
+Team Fallback Fix
+
+Var File System
+
+Veritas Clusters Observability
+
+Windows Clusters Prechecks
+
+Windows Pezsize Settings
+
+
+There are multiple filters available, such as platform, automation, domain, ORGG, ORG7, ORG8, and totals (number of success and failure counts). The panels are divided by platform-wise count, ORGG, ORG7, ORG8, and country code.
+
+
+2. RAID and Physical Disk Status Dashboard:
+This dashboard monitors Windows and Linux RAID and physical disk status in real time. Multiple panels and filters are provided for failed RAID status, RAID degraded servers, RAID rebuilt servers, RAID status, physical disk failures, servers requiring rebuilds, and forecasted disk replacements. Other panels include the total count of unassigned physical disks, tier-wise breakdown, and lifecycle state, with filters for time, hardware type, environment, tier, lifecycle state, hostname, and GBGF.
+
+
+3. API Testing JMX Template Dashboard:
+Used to monitor JMX test cases, this dashboard is refreshed in real time. It includes three panels: total test case count, successful test cases, and failed test cases, along with a detailed table of the test cases.
+
+
+4. API Vulnerability Status Dashboard:
+This dashboard tracks API vulnerabilities in real time, with panels showing total vulnerabilities, failed vulnerabilities, and successful vulnerabilities. The table provides a detailed view of the API vulnerability status.
+
+
+5. API Testing Automation using Pytest:
+Used for monitoring API testing automation with Pytest, this dashboard is refreshed in real time and includes panels for total test case count, successful test cases, and failed test cases. A table provides detailed test case information.
+
+
+6. AAP Inventory Connection Checks:
+This dashboard monitors AAP inventory connection checks, with multiple filters for platform, time, hostname, GBGF tier, environment, and lifecycle state.
+
+
+
+
+---
+
+Let me know if you need any further adjustments!
+
