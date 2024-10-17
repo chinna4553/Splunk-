@@ -1,3 +1,4 @@
+The "Ansible Config For Windows" dashboard is used for monitoring Ansible configuration data for Windows, refreshed every 24 hours. The dashboard includes a table displaying the following fields: "hostname," "BasicAuth," "CredSSP," "KerberosAuth," "WinRMPort_5985_Status," "WinRMPort_5986_Status," "winrmPorts_5985," "winrmPorts_5986," "winrm_Listener," "winrm_status," "Ansible Tower Group," and "AnsibleAdmingroup."
 As a Software Engineer, here are two focused development needs you might consider:
 
 1. Collaboration and Teamwork: Enhancing my ability to work effectively within cross-functional teams will improve project outcomes and foster innovation.
