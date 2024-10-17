@@ -1,3 +1,19 @@
+Here are the corrected sentences with the panel and filter names unchanged:
+
+1. APL Testing JMX Template Dashboard: This dashboard is used for monitoring the JMX test cases, with data refreshed in real time. It includes three panels: Total Test Case Count, Success Count, and Failed Count. There is also a table providing a detailed view of each test case.
+
+
+2. API Vulnerability Status Dashboard: This dashboard monitors the API Vulnerability Status, with data refreshed in real time. It features three panels: Total SAST Scan GitHub Repository Count, Vulnerabilities Count, and Vulnerabilities Count (duplicate name as provided). Additionally, a table offers a detailed view of the API Vulnerability Status.
+
+
+3. API Testing Automation using Pytest Dashboard: This dashboard is used to monitor API Testing Automation using Pytest, with real-time data updates. It contains three panels: Total Test Case Count, Success Count, and Failed Count, along with a table showing detailed test case information.
+
+
+4. AAP Inventory Connection Checks Dashboard: This dashboard monitors the AAP inventory connection checks. It includes multiple filters: Platform, Time, Hostname, GBGF, Tier, Environment, Lifecycle State, and Country Code. The panels in this dashboard are Success Servers Count, Unreachable Servers, Total Servers, Environment Wise Count, By Tier, By Country, and By GBGF.
+
+
+
+Let me know if you need any further adjustments!
 Here’s a refined version, keeping the panel and filter names unchanged:
 
 
