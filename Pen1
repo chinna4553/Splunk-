@@ -1,3 +1,16 @@
+Here’s the refined version with the original panel and filter names kept intact:
+
+
+---
+
+This dashboard is used for monitoring Windows and Linux RAID and physical disk status, with data refreshed in real time. Multiple panels and filters are available, including "Failed Physical Disks Count," "Degraded Raids Count," "Total Unassigned Physical Disks," "Physical Disk Failed Servers Weekly Trend with Forecast," "RAID Failed Servers Weekly Trend with Forecast," "Total Unassigned Physical Disks Weekly Trend with Forecast," "Pending Status Day Wise Count," "By GBGF Wise Count," "By Environment," and "By Tier Wise."
+
+The available filters are "Select OS Type," "Select Time," "Hostname," "Select GBGF," "Hardware Type," "Tier," "Environment," "Lifecycle State," and "Country Code."
+
+
+---
+
+Let me know if you need any further adjustments!
 Here is the corrected version of the content, along with some improvements for clarity:
 
 
