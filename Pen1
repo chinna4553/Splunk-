@@ -1,5 +1,22 @@
 Here are the corrected sentences with the panel and filter names unchanged:
 
+1. C Drive Housekeeping: This dashboard is used for monitoring C drive housekeeping. It includes a table displaying the visibility of total space and free space (in GB) available after the housekeeping script is executed for all servers. Additionally, it shows visibility of servers where partial cleanup or no cleanup occurred for two consecutive instances and the free space is 10 GB, along with Service, Service Owner, IT Service Org 6, 7, and 8 information. The panels show the count of servers with <10 GB free space and <100 GB total space, along with filters for Service Owner, IT Service Org 6 and 7, <10 GB free space, and <100 GB total space.
+
+
+2. Perfmon Baseline Setup - Windows Dashboard: This dashboard is used to monitor the Perfmon Baseline Setup, with data coming from dc.tanium. It features a table with multiple fields, including "Computer Name," "Tanium Server Name," "Source," "ARF Execution," "Group Index," "Output Message," and "Result Date Time."
+
+
+3. Otel Package Deployment Status (Windows & Linux): This dashboard is used for monitoring the Otel Package Deployment Status (Windows & Linux). It includes multiple panels and filters, with every panel and filter displaying data for Windows and Linux. The filters are Select Time, Hostname, Select OSType, Environment, Lifecycle State, and Country. The panels include Total Server Count, Success Count, Failed Count, counts by environment, counts for Linux and Windows servers, counts by country, Otel deployment status day-wise trend, and a detailed view of Otel package deployment.
+
+
+4. Otel Agent Status: This dashboard is used for monitoring the Otel agent status (Windows & Linux), with data refreshed every 24 hours. It features multiple filters and panels, with every panel and filter displaying data for Windows and Linux. The filters include Platform, Time, Hostname, and Service Name. The panels include Qtel Version, Qtel Installation Status, Otel Service Status, Endpoint UBI, Validate Otel Config, Data Flow, counts by environment, and counts by Qs Version. There is also a table named Agents Details View.
+
+
+
+Let me know if you need any further adjustments!
+
+Here are the corrected sentences with the panel and filter names unchanged:
+
 1. APL Testing JMX Template Dashboard: This dashboard is used for monitoring the JMX test cases, with data refreshed in real time. It includes three panels: Total Test Case Count, Success Count, and Failed Count. There is also a table providing a detailed view of each test case.
 
 
