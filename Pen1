@@ -1,3 +1,16 @@
+Here’s a refined version, keeping the panel and filter names unchanged:
+
+
+---
+
+This dashboard is used for monitoring multiple automations and data collections in a single view. It includes 16 automations and 9 data collections across various platforms, such as Windows, Linux, Citrix, and APL. The automations and data collections include: "SCOM Agent Hygiene - ARF," "C Drive Housekeeping," "ESXi Build/Rebuild Automation," "ESXi Health Check Automation," "ESXi Maintenance Mode Automation," "ESXi Patch/Upgrade Automation," "Linux Physical Status Check," "Linux RPM Hung Fix," "Linux Raid Status Check," "Linux Timeout Fix," "MSSQL Self-Healing," "Opt File System," "Otel Agent Status," "Perfmon Baseline Setup," "PowerShell Execution Policies," "Storage Path Checks (Windows)," "TLS/SSL Version," "Imp File System," "Tram Faillock Fix," "Var File System," "Veritas Clusters Observability," "Windows Clusters Prechecks," "Windows Pagefile Settings," "Windows Physical Status Check," and "Windows Raid Status Check."
+
+Multiple filters are available, including "Platform," "Automation," "Domain," "ORGG," "ORG7," and "ORG8." The panels are divided by platform-wise count, "ORGG," "ORG7," "ORG8," and "Country Code," with automation name-wise country breakups.
+
+
+---
+
+Let me know if this aligns with your requirements!
 Here’s the refined version with the original panel and filter names kept intact:
 
 
