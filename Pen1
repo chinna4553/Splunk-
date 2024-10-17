@@ -1,3 +1,22 @@
+Here’s a refined version of your descriptions with double quotation marks added around the panel and filter names for clarity:
+
+1. "Customer Onboarding Dashboard": This dashboard displays the monthly count of newly onboarded ITSO members and any changed schedule dates. It includes multiple filters such as "Hostname," "Requester Name," "Cr Number," "Status," "Requester Mail," and a "Time Filter." The first panel provides details of the server, while the second panel displays the monthly count of newly visited ITSO members. All panels function based on the selected filters, and the dashboard data is refreshed every 24 hours.
+
+
+2. "Compliance with Uptime": This dashboard is used to identify the uptime of servers. It contains a table with fields like "Computer Name," "SUG Name," "Status," "Last Reboot," "Uptime," "SUG Created On," "Segnum," and includes filters such as "Computer Name," "SUG Name," and "Last Reboot." The data in this dashboard is also refreshed every 24 hours.
+
+
+3. "Overall Compliance Dashboard - 9 Months": This dashboard monitors the overall compliance of servers over a nine-month period. It features multiple panels and filters, including "Computer Name," "Service Name," "Service Owner Name," "Country," "Org6," "Org7," and "Org8." The panels include "Month Wise Status of Software Update Compliance Dashboard," "Distributed Compute Service_IT_ORG8," "Servers Non-Compliant Last Two Patch Cycles," "Servers Non-Compliant Last Three Patch Cycles," "Server Compliant Status Last Patch Cycle," "Server Compliant Status Last Two Patch Cycle," "Server Compliant Status Last Three Patch Cycle," "Only from Unicorn Server Count," "Only from SCCM Servers Count," "Not Available from SCCM Servers Count," "Servers in GPM Scope," and "Servers Not in GPM Scope." The data in this dashboard is refreshed every 24 hours.
+
+
+4. "Patch Schedules Week Wise Count": This dashboard monitors patch schedules on a week-wise basis, with data refreshed every 24 hours. It includes multiple panels and filters, specifically "Time" and "Gladded." The panels consist of a table, "CI Count Sum," and "Auto Patch Schedules Week Wise Count."
+
+
+5. "Cyber Report With Software Compliance": This dashboard identifies servers that are non-compliant over the last three patch cycles. The data is refreshed every 24 hours and features one table containing fields such as "Computer Name," "Risk," "n," "n-1," "n-2," "n.," "n-1.," "n-2.," "Lifecycle State," "Next Patch...days," "isSkinKeKest," "isSkinRatch," "isNotield," "Country Code," "Environment," "First Notification," "MSQWOSI," "CVE Description," "Mitigation Status," "Solution," "Vulnerability," "Ques," "Que Days," "Jetalspace GB," "Freerspace GB," "SCCM-CCM-Site-Code," and "Last Reboot."
+
+
+
+Let me know if you need any further adjustments!
 Here’s the revised text with improved sentence formation and double quotations around the panel and filter names:
 
 
