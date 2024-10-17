@@ -1,3 +1,40 @@
+Here’s the revised text with improved sentence formation and double quotations around the panel and filter names:
+
+
+---
+
+Newly Prepared and Modified Dashboard in RRE-Infra SRE Team:
+
+1. IBM Call Home Hardware Monitoring Dashboard: This dashboard is used for monitoring IBM Call Home, with data coming in real time. I have created multiple filters, including "Enter Hostname," "HealthStat Incident Days," "Service Tier," "Countercede," and "Enter Incident Num." The panels include "DRN Status," "Hadoop Servers Status," "Regional Countries," "ESA Instance Status," and "Incident Count," which will be displayed based on the "Incident Days" filter. Additionally, panels such as "HW Incidents created by IBM Call Home (Status: ALL)," "Device Model Wise Count," "Top Noisy Nodes," and "Most Alerted Issue" will also show counts based on the "Incident Days" filter. Other panels include "Incidents Data," "Physical Server Hardware Health Report," and "Number of Incidents Every Month."
+
+
+2. OS Config Dashboard: This dashboard is used for monitoring critical parameters such as "CPU," "Kernel and MP version," "Swappiness," and "NB Route Bond." It features filters like "Select Type," "Hostname," and "Config Drift Flag." The panels consist of "CPU Count," "Kernel and MP Version" table, "Swappiness" table, and under "NB Route Bond," there are three panels: "NB Bond Speed," "NB Media Server Route," and "Net Backup Compliance Status."
+
+
+
+
+---
+
+Newly Prepared Dashboard in RRE-SCOM Team:
+
+1. SCOM - Alert Threshold Management (Windows): This dashboard is used for monitoring the status of alert threshold management, with real-time data updates. It includes multiple filters such as "Time" and "Hostname." The panels consist of "Total Requests," "Success," "Failed," "Process Name Wise Count," "Service Name Wise Count," and "Top Issues." If we click on any panel, a detailed view of the associated table will be displayed as well.
+
+
+
+
+---
+
+Newly Prepared and Modified Dashboard in GPM Team:
+
+1. Customer Onboarding Dashboard: This dashboard allows us to see the new onboarded ITSO monthly count and any changed schedule dates. It features multiple filters like "Hostname," "Requester Name," "CR Number," "Status," "Requester Mail," and "Time Filter." The dashboard includes two panels; the first one displays relevant metrics related to customer onboarding.
+
+
+
+
+---
+
+Let me know if you need any further adjustments!
+
 Here are the corrected sentences with the panel and filter names unchanged:
 
 1. IBM Call Home Hardware Monitoring Dashboard: This dashboard is used for monitoring IBM Call Home, with real-time data updates. It includes multiple filters: Enter Hostname, HealthStat Incident Days, Service Tier, Courtovcode, and Enter Incident Num. The panels include DRN Status, Hadoop Servers Status, Regional Countries, ESA Instance Status, and Incident Count, which will be displayed based on the Incident Days filter. Other panels include HW Incidents created by IBM Call Home (Status: All), Device Model Wise Count, Top Noisy Nodes, Most Alerted Issue (count displayed based on the Incident Days filter), Incidents Data, Physical Server Hardware Health Report, and Number of Incidents Every Month.
