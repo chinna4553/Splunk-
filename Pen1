@@ -1,3 +1,20 @@
+Here’s the refined version of your descriptions, with double quotation marks added around the panel and filter names for clarity:
+
+6. "GPM In Scope - Compliance": This dashboard is used to monitor the compliance status of servers within the GPM scope. The data in this dashboard is refreshed every 24 hours and includes two filters: "Month" and "Computer Name." The multiple panels in this dashboard are called "GPM Team Scope Server Details Table," "JsSkipBelaget (Non-Compliant)," "Live and Not Live Servers Monthly Status Report," "Wladowa 25," "Uve Servers," "Windows DS," "Not Live Soomes," and "Live and Not Live Windows Sevens."
+
+
+7. "Patch Compliance - HRC Dashboard": This dashboard is used to monitor the HRC compliance status for regions AR, DE, TR, and CH. The data in this dashboard is refreshed every 24 hours and includes multiple filters: "Service Owner," "Service Name," "Service IT_ORG6," "Service IT_ORG/SERVICE_IT_ORGB," and "Month." The two panels in this dashboard are "Servers Month-Wise Status" and "Server Compliant Status Last Nine Patch Cycles with Owner Details."
+
+
+8. "Windows Self Service Patching": This dashboard includes panels such as "Monthly Onboarding Trend," "Overall Onboarding YTD," "Last 10 Days Trend," "GIBGF Breakdown," "Org6," "Org7," "Org8 ITSO Onboarding Breakdown," "Service Entitled GBGF Breakdown Org6," "Org7," "Org8," and "Service Onboarding Details."
+
+
+
+I made the following changes to the "AH Overall Summary" dashboard based on the requirements of the following teams: "RRE-SCOM," "RRE - Monitoring Automation," and "Automation Engineering Development."
+
+In this dashboard, I added "Patrol Agent Details" under the "Linux" panel, as well as "Citrix VDA Version" and "VM INTERNAL" tools in the "Windows Server" tables. I excluded "Active Directory" in the "SCOM Windows" panel and removed "PUPPETLAB" and "PUPPETICP" in "UAT" and "Prod." Additionally, I included "APPRO Mоix" and "APER Winslow" in the fields under the "Unix Agent" and "Windows Agent" tables.
+
+Let me know if you need any further adjustments!
 Here’s a refined version of your descriptions with double quotation marks added around the panel and filter names for clarity:
 
 1. "Customer Onboarding Dashboard": This dashboard displays the monthly count of newly onboarded ITSO members and any changed schedule dates. It includes multiple filters such as "Hostname," "Requester Name," "Cr Number," "Status," "Requester Mail," and a "Time Filter." The first panel provides details of the server, while the second panel displays the monthly count of newly visited ITSO members. All panels function based on the selected filters, and the dashboard data is refreshed every 24 hours.
