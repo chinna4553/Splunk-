@@ -1,3 +1,46 @@
+Here’s a refined version of your responses with correct sentence formation and clarity:
+
+Learning:
+
+1. Power BI: I have created a dashboard in Power BI that displays the status of Pytest test cases.
+
+
+2. Python Basics
+
+
+3. GitHub
+
+
+
+Where Have You Exceeded Expectations?
+
+Tell us about the things that you have done this year that you feel have gone beyond what is expected of you.
+
+1. To the best of my knowledge, I added a panel called "Monthly Onboarding Trend" to the "Windows Self Service Patching" dashboard. In this panel, I utilized the "predict" command to generate a forecast trend for the monthly view of this dashboard.
+
+
+2. Additionally, I employed the "predict" command to obtain a monthly view of forecast values for the RAID and physical disk dashboard, which also includes monthly trend panels.
+
+
+
+Where Have You Fallen Short of Expectations?
+
+Is there anything that could have been done better? Any disappointments?
+
+[Provide your thoughts here regarding areas of improvement or any disappointments you experienced.]
+
+
+Values Aligned Behavior
+
+Use the Values Aligned Behavior Guide in HR Direct to help you.
+
+How would you rate yourself in each of the following areas? Use the guide and specify a rating (role model, strong, good, unacceptable) and provide examples.
+
+[Provide your self-ratings and examples here.]
+
+
+Feel free to fill in the placeholders for areas of improvement and self-ratings with examples, and let me know if you need any further adjustments!
+
 Here’s the refined version of your descriptions, with double quotation marks added around the panel and filter names for clarity:
 
 6. "GPM In Scope - Compliance": This dashboard is used to monitor the compliance status of servers within the GPM scope. The data in this dashboard is refreshed every 24 hours and includes two filters: "Month" and "Computer Name." The multiple panels in this dashboard are called "GPM Team Scope Server Details Table," "JsSkipBelaget (Non-Compliant)," "Live and Not Live Servers Monthly Status Report," "Wladowa 25," "Uve Servers," "Windows DS," "Not Live Soomes," and "Live and Not Live Windows Sevens."
