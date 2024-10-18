@@ -1,4 +1,22 @@
-<dashboard>
+<dashboard version="1.1" theme="dark">
+  <label>Cisco_ISE</label>
+  <link rel="stylesheet" type="text/css" href="/en-US/static/app/your_app_name/custom.css"/>
+  <row>
+    <panel>
+      <html>
+        <div class="custom-title">ISE Profiler</div>
+      </html>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <html>
+        <div class="custom-title">ISE Overview</div>
+      </html>
+    </panel>
+  </row>
+  <!-- Repeat for other sections as needed -->
+</dashboard><dashboard>
     <label>Custom Dashboard</label>
     <link rel="stylesheet" type="text/css" href="/en-US/static/app/your_app_name/custom.css"/>
 
