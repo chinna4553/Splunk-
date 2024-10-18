@@ -1,0 +1,354 @@
+
+<dashboard version="1.1" theme="dark">
+  <label>Cisco_ISE</label>
+  <row>
+    <panel>
+      <single>
+        <search>
+          <query>| makeresults
+| eval ISE_Profiler = "ISE Profiler"</query>
+          <earliest>-30m@m</earliest>
+          <latest>now</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="colorBy">value</option>
+        <option name="colorMode">none</option>
+        <option name="drilldown">all</option>
+        <option name="numberPrecision">0</option>
+        <option name="rangeColors">["0x53a051","0x0877a6","0xf8be34","0xf1813f","0xdc4e41"]</option>
+        <option name="rangeValues">[0,30,70,100]</option>
+        <option name="showSparkline">1</option>
+        <option name="showTrendIndicator">1</option>
+        <option name="trellis.enabled">0</option>
+        <option name="trellis.scales.shared">1</option>
+        <option name="trellis.size">medium</option>
+        <option name="trendColorInterpretation">standard</option>
+        <option name="trendDisplayMode">absolute</option>
+        <option name="unitPosition">after</option>
+        <option name="useColors">0</option>
+        <option name="useThousandSeparators">1</option>
+        <drilldown>
+          <link target="_blank">/app/Splunk_CiscoISE/ise_profiler</link>
+        </drilldown>
+      </single>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <single>
+        <search>
+          <query>| makeresults
+| eval ISE_Overview = "ISE Overview"</query>
+          <earliest>-15m</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">all</option>
+        <drilldown>
+          <set token="ISE_overview">$click.value$</set>
+        </drilldown>
+      </single>
+    </panel>
+  </row>
+  <row depends="$ISE_overview$">
+    <panel>
+      <single>
+        <search>
+          <query>| makeresults
+| eval ISE_Summary_View = "ISE Summary View"</query>
+          <earliest>-15m</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">all</option>
+        <drilldown>
+          <link target="_blank">/app/Splunk_CiscoISE/ise_overview</link>
+        </drilldown>
+      </single>
+    </panel>
+    <panel>
+      <single>
+        <search>
+          <query>| makeresults
+| eval ISE_Alarms = "ISE Alarms"</query>
+          <earliest>-15m</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">all</option>
+        <drilldown>
+          <link target="_blank">/app/Splunk_CiscoISE/ise_alarm_summary</link>
+        </drilldown>
+      </single>
+    </panel>
+    <panel>
+      <single>
+        <search>
+          <query>| makeresults
+| eval ISE_System_Health = "ISE System Health"</query>
+          <earliest>-15m</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">all</option>
+        <drilldown>
+          <link target="_blank">/app/Splunk_CiscoISE/ise_system_health</link>
+        </drilldown>
+      </single>
+    </panel>
+  </row>
+  <row depends="$ISE_overview$">
+    <panel>
+      <single>
+        <search>
+          <query>| makeresults
+| eval ISE_Administration_Operational_Audit = "ISE Administration and Operational Audit"</query>
+          <earliest>-15m</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">all</option>
+        <drilldown>
+          <link target="_blank">/app/Splunk_CiscoISE/ise_admin_ops_audit</link>
+        </drilldown>
+      </single>
+    </panel>
+    <panel>
+      <single>
+        <search>
+          <query>| makeresults
+| eval Splunk_App_Cisco_configuration = "Splunk App for Cisco ISE configuration"</query>
+          <earliest>-15m</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">all</option>
+        <drilldown>
+          <link target="_blank">/app/Splunk_CiscoISE/ise_documentation</link>
+        </drilldown>
+      </single>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <single>
+        <search>
+          <query>| makeresults
+| eval Authentications = "Authentications"</query>
+          <earliest>-15m</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">all</option>
+        <drilldown>
+          <set token="Authentications">$click.value$</set>
+        </drilldown>
+      </single>
+    </panel>
+  </row>
+  <row depends="$Authentications$">
+    <panel>
+      <single>
+        <search>
+          <query>| makeresults
+| eval ISE_Passed_Authentication_Summary = "ISE Passed Authentication Summary"</query>
+          <earliest>-15m</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">all</option>
+        <drilldown>
+          <link target="_blank">/app/Splunk_CiscoISE/ise_passed_authentications</link>
+        </drilldown>
+      </single>
+    </panel>
+    <panel>
+      <single>
+        <search>
+          <query>| makeresults
+| eval ISE_Passed_Wired_Authentications = "ISE Passed Wired Authentications"</query>
+          <earliest>-15m</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">all</option>
+        <drilldown>
+          <link target="_blank">/app/Splunk_CiscoISE/ise_passed_auth_location_wired</link>
+        </drilldown>
+      </single>
+    </panel>
+  </row>
+  <row depends="$Authentications$">
+    <panel>
+      <single>
+        <search>
+          <query>| makeresults
+| eval ISE_Passed_Wireless_Authentications = "ISE Passed Wireless Authentications"</query>
+          <earliest>-15m</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">all</option>
+        <drilldown>
+          <link target="_blank">/app/Splunk_CiscoISE/ise_passed_auth_location_wireless</link>
+        </drilldown>
+      </single>
+    </panel>
+    <panel>
+      <single>
+        <search>
+          <query>| makeresults
+| eval ISE_Passed_Virtual_Authentications = "ISE Passed Virtual Authentications"</query>
+          <earliest>-15m</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">all</option>
+        <drilldown>
+          <link target="_blank">/app/Splunk_CiscoISE/ise_passed_auth_location_virtual</link>
+        </drilldown>
+      </single>
+    </panel>
+  </row>
+  <row depends="$Authentications$">
+    <panel>
+      <single>
+        <search>
+          <query>| makeresults
+| eval ISE_Client_Authentication_Failures = "ISE Client Authentication Failures"</query>
+          <earliest>-15m</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">all</option>
+        <drilldown>
+          <link target="_blank">/app/Splunk_CiscoISE/ise_failed_clients_connection</link>
+        </drilldown>
+      </single>
+    </panel>
+    <panel>
+      <single>
+        <search>
+          <query>| makeresults
+| eval ISE_Failed_Authentication_Summary = "ISE Failed Authentication Summary"</query>
+          <earliest>-15m</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">all</option>
+        <drilldown>
+          <link target="_blank">/app/Splunk_CiscoISE/ise_failed_authentications</link>
+        </drilldown>
+      </single>
+    </panel>
+  </row>
+  <row depends="$Authentications$">
+    <panel>
+      <single>
+        <search>
+          <query>| makeresults
+| eval ISE_Failed_Wired_Authentications = "ISE Failed Wired Authentications"</query>
+          <earliest>-15m</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">all</option>
+        <drilldown>
+          <link target="_blank">/app/Splunk_CiscoISE/ise_failed_auth_location_wired</link>
+        </drilldown>
+      </single>
+    </panel>
+    <panel>
+      <single>
+        <search>
+          <query>| makeresults
+| eval ISE_Failed_Wireless_Authentications = "ISE Failed Wireless Authentications"</query>
+          <earliest>-15m</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">all</option>
+        <drilldown>
+          <link target="_blank">/app/Splunk_CiscoISE/ise_failed_auth_location_wireless</link>
+        </drilldown>
+      </single>
+    </panel>
+  </row>
+  <row depends="$Authentications$">
+    <panel>
+      <single>
+        <search>
+          <query>| makeresults
+| eval ISE_Failed_Virtual_Authentications = "ISE Failed Virtual Authentications"</query>
+          <earliest>-15m</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">all</option>
+        <drilldown>
+          <link target="_blank">/app/Splunk_CiscoISE/ise_failed_auth_location_virtual</link>
+        </drilldown>
+      </single>
+    </panel>
+    <panel>
+      <single>
+        <search>
+          <query>| makeresults
+| eval Failed_Guest_Attempts = "Failed Guest Attempts"</query>
+          <earliest>-15m</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">all</option>
+        <drilldown>
+          <link target="_blank">/app/Splunk_CiscoISE/ise_guest_authentications_failed</link>
+        </drilldown>
+      </single>
+    </panel>
+  </row>
+  <row depends="$Authentications$">
+    <panel>
+      <single>
+        <search>
+          <query>| makeresults
+| eval Passed_Guest_Authentications_and_Corp_Guest_Authentications_for_All_Users = "Passed Guest Authentications and Corp Guest Authentications for All Users"</query>
+          <earliest>-15m</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">all</option>
+        <drilldown>
+          <link target="_blank">/app/Splunk_CiscoISE/ise_guest_authentications</link>
+        </drilldown>
+      </single>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <single>
+        <search>
+          <query>| makeresults
+| eval Device_Summary = "Device Summary"</query>
+          <earliest>-15m</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">all</option>
+        <drilldown>
+          <set token="Device_Summary">$click.value$</set>
+        </drilldown>
+      </single>
+    </panel>
+  </row>
+  <row depends="$Device_Summary$">
+    <panel>
+      <single>
+        <search>
+          <query>| makeresults
+| eval ISE_Device_Summary-All_Locations = "ISE Device Summary - All Locations"</query>
+          <earliest>-15m</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">all</option>
+        <drilldown>
+          <link target="_blank">/app/Splunk_CiscoISE/ise_device_summary</link>
+        </drilldown>
+      </single>
+    </panel>
+    <panel>
+      <single>
+        <search>
+          <query>| makeresults
+| eval ISE_Unknown_Devices = "ISE Unknown Devices"</query>
+          <earliest>-15m</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">all</option>
+        <drilldown>
+          <link target="_blank">/app/Splunk_CiscoISE/ise_device_unknown</link>
+        </drilldown>
+      </single>
+    </panel>
+  </row>
+</dashboard>
