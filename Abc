@@ -1,0 +1,33 @@
+<dashboard>
+    <label>Custom Dashboard</label>
+    <link rel="stylesheet" type="text/css" href="/en-US/static/app/your_app_name/custom.css"/>
+
+    <row>
+        <panel>
+            <html>
+                <h1 class="custom-title">ISE Profiler</h1>
+            </html>
+        </panel>
+    </row>
+    <row>
+        <panel>
+            <html>
+                <h1 class="custom-title">ISE Overview</h1>
+            </html>
+        </panel>
+    </row>
+    <row>
+        <panel>
+            <html>
+                <h1 class="custom-title">Authentications</h1>
+            </html>
+        </panel>
+    </row>
+    <row>
+        <panel>
+            <html>
+                <h1 class="custom-title">Device Summary</h1>
+            </html>
+        </panel>
+    </row>
+</dashboard>
