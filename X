@@ -1,0 +1,20 @@
+<panel>
+  <single>
+    <search>
+      <query>| makeresults | eval ISE_Profiler = "ISE Profiler"</query>
+    </search>
+    <option name="status_indicator_app.status_indicator.colorBy">static_color</option>
+    <option name="status_indicator_app.status_indicator.fillTarget">background</option>
+    <option name="status_indicator_app.status_indicator.icon">fix_icon</option>
+    <option name="status_indicator_app.status_indicator.precision">0</option>
+    <option name="status_indicator_app.status_indicator.showOption">3</option>
+    <option name="status_indicator_app.status_indicator.staticColor">#1182f3</option>
+    <option name="status_indicator_app.status_indicator.useColors">true</option>
+    <option name="status_indicator_app.status_indicator.useThousandSeparator">true</option>
+    <option name="numberFontSize">30</option> <!-- Adding font size for numbers -->
+    <option name="labelFontSize">20</option>  <!-- Adding font size for labels -->
+    <drilldown>
+      <link target="_blank">/app/Splunk_CiscoISE/ise_profiler</link>
+    </drilldown>
+  </single>
+</panel>
