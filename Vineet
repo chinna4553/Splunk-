@@ -1,0 +1,29 @@
+<dashboard>
+    <label>My Dashboard</label>
+    <row>
+        <panel>
+            <title>Panel 1</title>
+            <chart>
+                <!-- Your chart or search goes here -->
+            </chart>
+            <!-- Add custom CSS here -->
+            <html>
+                <![CDATA[
+                <style>
+                    .panel-title {
+                        font-size: 20px;  /* Adjust the font size for panel title */
+                        color: #1a73e8;   /* Change the panel title color */
+                    }
+                    .dashboard-row {
+                        background-color: #f0f0f0;  /* Change the panel background color */
+                    }
+                    .dashboard-body {
+                        font-family: Arial, sans-serif;  /* Change the overall font */
+                        color: #333333;  /* Text color */
+                    }
+                </style>
+                ]]>
+            </html>
+        </panel>
+    </row>
+</dashboard>
