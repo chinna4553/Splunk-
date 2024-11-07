@@ -1,0 +1,13 @@
+An Internal Developer Platform (IDP) is a set of tools and practices built specifically to help software developers work more efficiently within a company. It provides developers with everything they need to build, test, deploy, and manage applications in a standardized way, allowing them to focus on coding and delivering features rather than managing infrastructure and processes.
+
+Here are the key elements of an IDP:
+
+1. Self-Service Infrastructure: It enables developers to request, create, or configure environments (like development, testing, or production) on their own, without needing help from DevOps or infrastructure teams. This could include provisioning databases, setting up cloud services, or configuring network policies.
+
+
+2. Standardized Tooling and Workflow: An IDP brings together all the tools and services a company uses (e.g., CI/CD pipelines, monitoring, logging, deployment systems) into one unified platform. This gives developers a consistent experience, no matter which project they’re working on.
+
+
+3. Abstracted Infrastructure Complexity: It hides the complexities of underlying infrastructure, allowing developers to work with high-level concepts that are more relevant to their applications. This way, developers don't need to learn or understand the details of infrastructure, servers, or
+
+
