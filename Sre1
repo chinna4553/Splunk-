@@ -1,0 +1,75 @@
+Based on the Repo Control & Lifecycle Management diagram, here are SRE-specific questions that align with its flow:
+
+Observability and Monitoring
+
+1. What key metrics would you monitor to ensure baseline initialization and regular scans are functioning correctly?
+
+
+2. How would you implement observability to detect deviations between the current state and the baseline store?
+
+
+3. What tools would you recommend to log and analyze configuration changes and compare results?
+
+
+
+Automation and Rollbacks
+
+4. How can you automate the comparison process to minimize manual intervention and reduce errors?
+
+
+5. What strategies would you use to ensure the success of automatic rollbacks in critical scenarios?
+
+
+6. How would you manage the approval process for offline rollbacks to balance speed and reliability?
+
+
+
+Failure Detection and Recovery
+
+7. What mechanisms can be implemented to detect high-impact configuration issues before they affect production?
+
+
+8. How would you design alerts to notify developers about configuration deviations or rollback actions?
+
+
+9. How can you ensure that the remediation process after a rollback is seamless and minimizes downtime?
+
+
+
+Compliance and Auditing
+
+10. What methods would you use to ensure compliance with the regular audit process shown in the diagram?
+
+
+11. How can you ensure the integrity of the baseline store, especially during frequent updates?
+
+
+12. What strategies would you implement to track and report the outcomes of regular scans and audits?
+
+
+
+Scalability and Reliability
+
+13. How would you scale the system to manage a growing number of repositories while maintaining consistent control?
+
+
+14. What steps can you take to ensure that the webhook of configuration changes remains reliable under heavy loads?
+
+
+15. How would you design the system to handle false positives or non-critical deviations efficiently?
+
+
+
+Continuous Improvement
+
+16. How can you use chaos engineering practices to test the reliability of this repo control system?
+
+
+17. What SRE techniques would you recommend to continuously optimize the lifecycle management process?
+
+
+18. How would you implement Service Level Objectives (SLOs) for this workflow, and what should be the primary SLIs?
+
+
+
+These questions focus on the reliability, automation, compliance, and continuous improvement aspects crucial to SRE practices. Let me know if you'd like to explore any area in more detail!
