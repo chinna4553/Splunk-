@@ -1,0 +1,72 @@
+Here are SRE-specific questions derived from the repository provisioning workflow diagram:
+
+Reliability and Monitoring
+
+1. How would you ensure the reliability of the API during the repository provisioning process?
+
+
+2. What metrics would you monitor to identify potential failures in the compliance control and permission check steps?
+
+
+3. How can you ensure end-to-end observability for this workflow, including UI/UX, API, and approval stages?
+
+
+
+Automation and Incident Management
+
+4. How would you design alerting for failures at the "Parameter Verification" or "Control Permission Check" stages?
+
+
+5. What strategies would you use to reduce manual approvals while ensuring compliance in the workflow?
+
+
+6. How would you handle incidents arising from failed repository creations to ensure minimal impact on developer productivity?
+
+
+
+Scalability and Performance
+
+7. How would you scale the API to handle a high volume of concurrent repository creation requests?
+
+
+8. What changes would you suggest to make this process more resilient during peak provisioning times?
+
+
+9. How can you implement rate limiting to ensure fair usage of the API without impacting reliability?
+
+
+
+Failure Recovery and Redundancy
+
+10. What mechanisms would you implement to retry or recover from failures in the repo creation step?
+
+
+11. How would you handle cascading failures in this workflow, ensuring no step causes system-wide downtime?
+
+
+12. How can you ensure redundancy in the approval process to prevent single points of failure?
+
+
+
+Compliance and Security
+
+13. How would you ensure that compliance control checks are not a bottleneck in the provisioning process?
+
+
+14. What SRE practices can help secure sensitive data, such as repository credentials, in this workflow?
+
+
+
+Continuous Improvement
+
+15. How can you apply chaos engineering to test the reliability of this provisioning workflow?
+
+
+16. What post-mortem practices would you recommend after an incident to improve the provisioning system?
+
+
+17. How would you implement Service Level Indicators (SLIs) and Service Level Objectives (SLOs) for this workflow?
+
+
+
+These questions focus on reliability, automation, scalability, security, and continuous improvement—all core aspects of SRE. Let me know if you'd like to expand on any of these!
