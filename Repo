@@ -1,0 +1,85 @@
+The diagram illustrates a Repo Provisioning process, which seems to automate repository creation based on defined parameters and checks. To prepare for a call with the application source code team, here are some meaningful questions you can ask:
+
+Understanding the Process
+
+1. Step Clarifications:
+
+Could you explain the exact role of the "UI/UX" component? Is it a web interface for developers to submit requests?
+
+What types of "Parameters" are verified during the Parameter Verification step?
+
+
+
+2. Control and Permissions:
+
+What permissions are checked in the Control Permission Check step? Are there specific roles or teams defined for repository creation?
+
+What happens if compliance checks fail? Are these logged for further review?
+
+
+
+3. Approvals Process:
+
+Can you explain the circumstances under which the Approvals step is triggered?
+
+Are these approvals automated, or do they involve manual intervention?
+
+
+
+
+Technical Integration
+
+4. API Interactions:
+
+What APIs are involved in the Repo API step? Are they GitHub or other custom APIs?
+
+Is there any feedback loop for API failures or success confirmations?
+
+
+
+5. Default Settings:
+
+What are the default configurations (branch protection, README, LICENSE) applied to new repositories? Can they be customized?
+
+
+
+6. Failure Handling:
+
+How are failures managed (e.g., retries, escalation)?
+
+Is there a logging mechanism for troubleshooting failed requests?
+
+
+
+
+SRE-Related Questions
+
+7. Monitoring:
+
+What monitoring tools are in place for this process? How do we ensure it runs smoothly?
+
+Are there alerts for bottlenecks or unexpected failures?
+
+
+
+8. Scalability:
+
+How scalable is this process? Can it handle multiple requests simultaneously?
+
+
+
+9. Incident Management:
+
+How are incidents or errors reported and resolved during repo provisioning?
+
+
+
+10. Change Requests:
+
+If there’s a need to update the workflow (e.g., add extra checks or features), what is the process for making these changes?
+
+
+
+
+Would you like me to tailor these questions further based on your team's focus or concerns?
+
