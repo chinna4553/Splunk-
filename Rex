@@ -1,0 +1,5 @@
+| rex field=_raw "(?ms)^(?<before_global_start>.*?)### global start ###"
+| table before_global_start
+
+| rex field=_raw "(?ms)^(?<before_global_start>.*?)### global start ###.*?### global end ###(?<after_global_end>.*)$"
+| table before_global_start after_global_end
