@@ -1,0 +1,142 @@
+Here are some thoughtful questions you can ask the team about the "Code Control" flowchart from an SRE perspective:
+
+
+---
+
+General Understanding
+
+1. What is the primary objective of this flowchart in the development lifecycle?
+
+
+2. Who owns each stage of the process, and how do they collaborate?
+
+
+
+
+---
+
+Pull Requests and Conflict Management
+
+3. What measures are in place to detect and resolve merge conflicts automatically?
+
+
+4. How are developers notified about merge conflicts, and what is the expected resolution time?
+
+
+
+
+---
+
+Pipeline Automation
+
+5. What triggers the CI Pipeline—only pull requests or other events as well?
+
+
+6. How long does each step of the pipeline typically take, and are there any bottlenecks?
+
+
+7. Is the pipeline designed to handle multiple pull requests simultaneously?
+
+
+
+
+---
+
+Code Quality Checks
+
+8. What rules are used for linting, and how customizable are they for different projects?
+
+
+9. Which vulnerabilities are prioritized in the SAST (SonarQube) step, and how often are the rules updated?
+
+
+10. What actions are taken if vulnerabilities are found in third-party libraries during the dependency scan?
+
+
+
+
+---
+
+Testing and Coverage
+
+11. What criteria determine whether unit tests are sufficient to proceed?
+
+
+12. How is the code coverage report evaluated, and what is the minimum acceptable threshold?
+
+
+13. Are integration tests or end-to-end tests considered in this pipeline?
+
+
+
+
+---
+
+Compliance and Credential Checks
+
+14. What specific compliance policies are being checked in the compliance step?
+
+
+15. How are credentials detected in the code, and what steps are taken to remediate such issues?
+
+
+
+
+---
+
+Notifications and Approvals
+
+16. How are developers notified about failed steps, and what is the feedback mechanism?
+
+
+17. Who is responsible for granting approvals, and is this process automated?
+
+
+18. Is there an escalation process if approvals are delayed or denied?
+
+
+
+
+---
+
+Security and Monitoring
+
+19. How is security ensured throughout the pipeline, especially during SAST and dependency scans?
+
+
+20. Are there any monitoring tools in place to track the pipeline's performance and reliability?
+
+
+
+
+---
+
+Scalability and Enhancements
+
+21. Can this process handle an increase in the number of pull requests as the team scales?
+
+
+22. What future enhancements are planned for this pipeline (e.g., adding dynamic security testing)?
+
+
+23. How does this pipeline integrate with external tools like Jenkins, GitHub Actions, or Azure DevOps?
+
+
+
+
+---
+
+Incident Handling
+
+24. What steps are followed if the pipeline itself fails or encounters errors?
+
+
+25. How are pipeline logs stored and analyzed to ensure quick troubleshooting?
+
+
+
+
+---
+
+These questions will help your team identify strengths, weaknesses, and opportunities for improvement in this process. Let me know if you’d like further assistance!
+
