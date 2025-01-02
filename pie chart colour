@@ -1,0 +1,19 @@
+<panel>
+  <title>Custom Pie Chart</title>
+  <row>
+    <chart>
+      <search>
+        <query>your_search_query_here</query>
+      </search>
+      <option name="charting.chart">pie</option>
+      <option name="charting.legend.placement">right</option>
+      <option name="charting.fieldColors">
+        {
+          "field1": "#FF5733", 
+          "field2": "#33FF57", 
+          "field3": "#3357FF"
+        }
+      </option>
+    </chart>
+  </row>
+</panel>
