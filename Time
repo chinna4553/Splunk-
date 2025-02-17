@@ -1,0 +1,3 @@
+| eval current_month=strftime(now(), "%Y-%m")
+| eval event_month=strftime(_time, "%Y-%m")
+| eval month_number=1 + abs(relative_time(now(), "-0mon@mon") - relative_time(_time, "-0mon@mon"))/2592000
