@@ -1,0 +1,7 @@
+| eval Manufacturer = case( 
+    match(ServerModel, "^(?i)PowerEdge.*"), "Dell", 
+    match(ServerModel, "^(?i)ProLiant.*"), "HP", 
+    match(ServerModel, "^(?i)ThinkSystem.*"), "Lenovo", 
+    match(ServerModel, "^(?i)UCSC.*"), "Cisco", 
+    1==1, "Unknown"
+)
