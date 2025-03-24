@@ -1,0 +1,65 @@
+<dashboard>
+  <label>API Adoption Report</label>
+  <row>
+    <panel>
+      <title>Monthly Trends for all API (Self service automation using ITSP portal) for past six months.</title>
+      <table>
+        <search>
+          <query>
+            | inputlookup Global_API_Adoption_reports.csv
+            | where isnotnull(hostname)
+            | search API="$tok_api$"
+            | search osType="$ostype$"
+            | search countryCode IN ("MY" "ID" "VN" "AU" "TH" "PH" "KR" "LK" "JP" "BD" "NZ" "MU" "IN" "CN" "HK" "MO")
+            | search countryCode="$country$"
+            | table timeStamp hostname API countryCode osType time type
+            | eventstats count by type
+            | timechart span=1month dc(hostname) as host by countryCode useother=0 usenull=f limit=0
+            | eval time=strftime(_time, "%b %y")
+            | rename time as Month
+            | tail 5
+          </query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="count">5</option>
+        <option name="dataOverlayMode">none</option>
+        <option name="drilldown">none</option>
+        <option name="rowNumbers">false</option>
+        <option name="wrap">true</option>
+        <format type="number" field="API"/>
+      </table>
+    </panel>
+  </row>
+
+  <!-- CSS Panel to Center Align Table Fields -->
+  <row>
+    <panel>
+      <html>
+        <style>
+          .dashboard-table table, 
+          .dashboard-table th, 
+          .dashboard-table td {
+            text-align: center;
+          }
+        </style>
+      </html>
+    </panel>
+  </row>
+
+  <row id="base2">
+    <panel>
+      <html>
+        <p><strong>Data is showing for last Three Months.</strong> 
+        There is a scheduled job running every day at 07:45 AM IST for the last three months.</p>
+      </html>
+    </panel>
+  </row>
+
+  <row depends="$alwaysHideCSSPanel$">
+    <panel>
+      <html>
+      </html>
+    </panel>
+  </row>
+</dashboard>
