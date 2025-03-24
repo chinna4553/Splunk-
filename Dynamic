@@ -1,0 +1,10 @@
+<dashboard>
+  <stylesheet>
+    .dashboard-panel { 
+      transition: all 0.3s ease; 
+    }
+    .empty-table { 
+      height: 100px; 
+    }
+  </stylesheet>
+</dashboard>
