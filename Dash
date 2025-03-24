@@ -1,0 +1,22 @@
+<dashboard>
+  <label>My Dashboard</label>
+
+  <row>
+    <panel>
+      <table>
+        <search>
+          <!-- Your SPL query goes here -->
+        </search>
+      </table>
+    </panel>
+  </row>
+
+  <!-- Add Custom CSS for Center Alignment -->
+  <style>
+    .dashboard-cell table.splTable td, 
+    .dashboard-cell table.splTable th {
+      text-align: center !important;
+      vertical-align: middle !important;
+    }
+  </style>
+</dashboard>
