@@ -1,0 +1,27 @@
+<dashboard>
+  <label>My Dashboard</label>
+  
+  <!-- Add CSS here -->
+  <stylesheet>
+    .dashboard-panel {
+      transition: all 0.3s ease;
+    }
+    .empty-table {
+      height: 100px;
+    }
+    .panel-title {
+      color: #007bff; /* Blue title */
+    }
+  </stylesheet>
+
+  <row>
+    <panel>
+      <title class="panel-title">Sample Table</title>
+      <table>
+        <search>
+          <query>| your_search_query</query>
+        </search>
+      </table>
+    </panel>
+  </row>
+</dashboard>
