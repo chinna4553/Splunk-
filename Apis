@@ -1,0 +1,4 @@
+index=your_index_name sourcetype=your_sourcetype_name
+| stats count AS Total_APIs, count(eval(API!="")) AS Used_APIs BY countryCode, osType
+| eval Percentage_Used = round((Used_APIs / Total_APIs) * 100, 2)
+| table countryCode osType Total_APIs Used_APIs Percentage_Used
