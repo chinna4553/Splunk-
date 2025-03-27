@@ -1,0 +1,5 @@
+index=your_index_name sourcetype=your_sourcetype_name
+| stats count AS Total_APIs, count(eval(osType="L")) AS Linux_APIs, count(eval(osType="E")) AS ESXI_APIs, count(eval(osType="W")) AS Windows_APIs BY countryCode
+| eval Linux_Percentage = round((Linux_APIs / Total_APIs) * 100, 2)
+| eval ESXI_Percentage = round((ESXI_APIs / Total_APIs) * 100, 2)
+| eval Windows_Percentage = round((Windows_APIs / Total_APIs) * 100, 2)
