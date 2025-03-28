@@ -1,0 +1,4 @@
+index=your_index
+| eval month=strftime(_time, "%b-%Y") 
+| stats count(API) as API_Count by month, countryCode
+| sort month
