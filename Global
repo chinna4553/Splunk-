@@ -1,0 +1,9 @@
+| inputlookup Global_API_Adoption_reports.csv
+| where isnotnull(hostname)
+| search API="*"
+| search osType="*"
+| search countryCode="IN" OR countryCode="VN" OR countryCode="TH" OR countryCode="PH" OR countryCode="KR" OR countryCode="BD" OR countryCode="NZ" OR countryCode="IN" OR countryCode="MS" OR countryCode="HK" OR countryCode="TW" OR countryCode="SG"
+| table hostname API countryCode osType _time
+| eval month=strftime(_time,"%d-%b")
+| stats count(API) as API_Count by month, countryCode
+| xyseries countryCode month API_Count
