@@ -1,0 +1,9 @@
+| inputlookup asp.csv
+| eval _month=strftime(_time, "%Y-%m")
+| where _time >= relative_time(now(), "-2mon@mon") AND _time <= relative_time(now(), "@mon")
+| stats count(API) as API by countryCode _month
+| xyseries countryCode _month API
+| fillnull value=0
+| addtotals row=true fieldname="Total_API"
+| foreach * [ eval <<FIELD>>_percent = if('Total_API' > 0, round(('<<FIELD>>' / 'Total_API') * 100, 2), 0) ]
+| fields - Total_API
