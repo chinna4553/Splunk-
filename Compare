@@ -1,0 +1,5 @@
+| your_search_query  
+| eval change = '% of Mar' - '% of Feb'  
+| eval color = case(change > 0, "green", change < 0, "red", 1=1, "black")  
+| eval percent_mar_display = "<span style='color:" . color . "'>" . '% of Mar' . "</span>"  
+| table Used, '% of Feb', percent_mar_display, '% of Apr'
