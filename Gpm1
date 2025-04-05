@@ -1,0 +1,91 @@
+Sure! Here's a well-written and structured overview of your GPM Splunk Dashboard, based on the information you provided:
+
+
+---
+
+GPM Splunk Dashboard Overview
+
+The GPM Splunk Dashboard is designed to provide a comprehensive view of self-service automation consumption across various countries and platforms. It empowers users to analyze and monitor server utilization and API activity effectively, enabling data-driven decisions for infrastructure optimization.
+
+Key Features:
+
+This dashboard is highly interactive and filter-driven, allowing users to customize the data views based on the following filters:
+
+Time Range
+
+API
+
+Platform (Linux, Windows, ESXi)
+
+Region
+
+Country
+
+
+All panels dynamically update based on the selected filter values, enabling focused and granular analysis.
+
+Dashboard Panels:
+
+The dashboard includes a variety of visual panels to support multiple analysis angles:
+
+1. Platform-wise Total Unicorn Server Count
+Displays the total number of Unicorn servers grouped by platform (Linux, Windows, ESXi).
+
+
+2. OS Version-wise Breakdowns
+Three separate panels showing OS version distribution for:
+
+Linux
+
+Windows
+
+ESXi
+
+
+
+3. Total API Count Panel
+Provides the total number of API calls over the selected time period.
+
+
+4. Servers Count Panel
+Shows the total number of servers involved in automation.
+
+
+5. Country Count Panel
+Indicates how many unique countries are involved in the automation process.
+
+
+6. Beneficiary Countries by Host Count Panel
+Ranks countries based on the number of hosts utilizing automation.
+
+
+7. API-wise Breakdowns Panel
+Shows the distribution of API usage, helping to identify the most and least utilized APIs.
+
+
+8. Platform-wise Count Panel
+Displays server counts categorized by platform.
+
+
+9. Monthly Trend – Number of Servers with Automatic Consumption (Last 6 Months)
+Line chart showing server consumption trends over the past six months.
+
+
+10. Last 6 Months – API-wise Server Count Panel
+Breaks down API usage by server count for the past six months.
+
+
+11. API-wise and Country-wise Server Count Panel
+Visualizes API usage across different countries, offering insights into regional trends.
+
+
+12. Country Code-wise and API-wise Server Count Table
+A detailed table that maps server count to both country codes and API usage for deep-dive analysis.
+
+
+
+
+---
+
+Let me know if you'd like this formatted as a report, presentation, or part of a documentation template. I can also help you write an impact summary or next steps section if needed.
+
