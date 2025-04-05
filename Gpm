@@ -1,0 +1,39 @@
+To write the performance details of the Splunk dashboard you created in Q1, you can summarize its purpose, key features, and any insights gained from it. Here’s an outline you can follow:
+
+1. Dashboard Overview:
+Provide a brief description of the dashboard, including its objectives (e.g., monitoring API usage, server consumption, country-wise data distribution, platform-specific metrics).
+
+Example:
+"In Q1, I created a Splunk dashboard designed to track API usage, server counts, and platform-specific metrics. The dashboard provides insights into the consumption of automation services across different countries and platforms, with a special focus on the Linux and Windows environments."
+
+
+2. Key Features:
+Highlight the important features and visualizations used in the dashboard (e.g., pie charts, bar graphs, time series). Also, mention any data filters or breakdowns that allow for granular insights.
+
+Example:
+"The dashboard includes various data visualizations such as pie charts for beneficiary country distributions, platform breakdowns (Linux, ESXi, Windows), and API-wise counts. It also provides detailed views of API consumption over time, helping to identify trends and optimize resource allocation."
+
+
+3. Performance Metrics:
+Share any relevant performance metrics, such as the number of servers monitored, API usage trends, or how the dashboard helped in decision-making. If you tracked improvements, mention them here.
+
+Example:
+"The dashboard allowed for tracking API usage across different periods, highlighting key areas for optimization. For example, the Firmware Compliance API was identified as a significant area of usage with over 53,000 calls in the last six months. The visualization of platform breakdowns highlighted areas where server optimization was needed, especially in underutilized platforms."
+
+
+4. Challenges and Optimizations:
+If any challenges were faced during the creation of the dashboard or if any optimizations were made over time, mention them.
+
+Example:
+"One challenge was ensuring the accurate segmentation of data across different regions and platforms. However, using Splunk’s powerful filtering and visualization tools, we were able to refine data segmentation and enhance the dashboard's accuracy."
+
+
+5. Impact and Future Improvements:
+Reflect on how the dashboard has helped the team or business. Additionally, mention any planned improvements for the next quarter.
+
+Example:
+"This dashboard has helped the team quickly identify underperforming servers and optimize resource allocation across platforms. In the next quarter, we plan to integrate additional data sources to enrich the API consumption reports and include predictive insights for proactive management."
+
+
+
+Let me know if you need help refining this!
