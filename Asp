@@ -1,0 +1,19 @@
+Sure! Here's a concise overview of your ASP Splunk Dashboard in under 10 lines:
+
+
+---
+
+The ASP Splunk Dashboard provides insights into self-service automation across platforms and countries.
+It includes interactive filters for Time, Platform, API, and Country to dynamically update panel data.
+Key visuals include a bar chart showing country-wise server counts for Windows, Linux, and ESXi.
+A 6-month trend table displays automation usage per API and country.
+Dedicated panels provide API-wise country breakdowns for all platforms.
+Three detailed views show country-wise server targets vs actuals,
+user count, API availability and usage, with percentages.
+Visual indicators highlight trends (up/down) for each metric.
+This dashboard helps monitor automation performance and adoption at a granular level.
+
+
+---
+
+Let me know if you'd like a version for documentation or presentation use.
