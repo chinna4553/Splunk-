@@ -1,0 +1,25 @@
+Sure! Here's a 15-line overview of your ASP Splunk Dashboard:
+
+
+---
+
+The ASP Splunk Dashboard offers a comprehensive view of self-service automation consumption.
+It is designed with filters for Time, Platform, API, and Country to enable flexible data slicing.
+The dashboard tracks automation adoption across Windows, Linux, and ESXi platforms.
+A bar chart highlights country-wise server counts for each platform.
+A 6-month trend table shows automation activity across APIs and countries.
+API-wise and country-wise panels give a granular view of consumption patterns.
+Separate panels display Linux, Windows, and ESXi data breakdowns per country.
+Each panel shows target server count, actual usage, and user count.
+It also calculates percentage of API availability and usage.
+Trend indicators visualize increases or decreases in usage over time.
+This enables identification of underutilized or high-performing regions.
+The dashboard supports tracking adoption trends across geographies.
+Insights are actionable for optimizing automation strategy and API deployment.
+It provides real-time visibility into platform-specific performance.
+Designed for operations and automation teams to drive data-driven decisions.
+
+
+---
+
+Let me know if you need a version tailored for reports or stakeholders.
