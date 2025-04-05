@@ -1,0 +1,25 @@
+Sure! Here's a 15-line professional overview of your GPM Splunk Dashboard:
+
+
+---
+
+The GPM Splunk Dashboard provides detailed insights into self-service automation consumption across countries.
+It includes dynamic filters such as Time, API, Platform, Region, and Country for flexible data exploration.
+The dashboard enables platform-wise visibility into total Unicorn server counts for Linux, Windows, and ESXi.
+Dedicated panels break down OS version-wise data for each platform individually.
+A centralized panel shows the total number of APIs available in the automation ecosystem.
+It includes a comprehensive server count panel to monitor overall infrastructure size.
+The country count panel highlights the number of unique countries engaged in automation.
+A beneficiary countries panel shows host count distribution, aiding regional analysis.
+The API-wise breakdown panel helps identify which APIs are most consumed.
+It also features platform-wise consumption stats, enabling comparative insights.
+A 6-month trend panel tracks the monthly growth in server automation adoption.
+Another panel displays API-wise server consumption over the last 6 months.
+API and country-specific panels show granular usage patterns.
+A country code-wise table offers detailed cross-section of API and server counts.
+Overall, the dashboard empowers teams to analyze, optimize, and scale automation initiatives effectively.
+
+
+---
+
+Let me know if you want a version for presentation or documentation!
