@@ -1,0 +1,20 @@
+Thanks for the clarification! Here's the revised version with that detail included, organized into clear paragraphs:
+
+
+---
+
+In the Automation Dashboard, I have added three new panels to provide better visibility into automation compliance and system readiness.
+
+The first panel is Compliance Overview. It displays the status counts for categories such as "Not in Central Remit" and "Central Remit", along with N, N-1, and N-2 views. Additionally, this panel shows the percentage of N and N-1 individually, as well as their combined percentage. This gives a detailed insight into the compliance distribution across different time frames.
+
+The second panel is the Network View. It presents network-related status counts in a similar format, with data grouped by N, N-1, and their respective percentages. Users can interact with the panel by clicking on the numbers to see detailed drill-downs, including specific server information related to each status.
+
+The third panel is the Server Pre-Check View, which provides visibility into pre-check results of individual servers. It also follows the same format, showing counts and percentages for N and N-1, and allows users to click through to view detailed server-level information.
+
+All three panels consistently highlight N and N-1 data, making it easy to compare current and previous cycle performance. These enhancements ensure that the dashboard provides an interactive, informative, and consistent view for compliance tracking and automation analysis.
+
+
+---
+
+Let me know if you'd like this version shortened or formatted for a specific audience.
+
