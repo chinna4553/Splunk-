@@ -1,0 +1,19 @@
+Got it! Here's your update written in paragraph form, divided clearly into multiple short paragraphs:
+
+
+---
+
+In the Automation Dashboard, I have added three new panels to improve visibility and monitoring capabilities.
+
+The first panel is called Compliance Overview. This panel displays the status counts such as "Not in Central Remit", "Central Remit", and views categorized by N, N-1, and N-2. It also includes percentage values for N & N-1 categories along with the overall total count and percentage. This provides a high-level snapshot of compliance distribution across various stages.
+
+The second panel is the Network View. It gives an individual breakdown of network statuses. Users can click on any number shown in the panel to drill down and view detailed server information related to that specific status.
+
+The third panel is the Server Pre-Check View, which highlights the results of pre-checks done on individual servers. Just like the Network View, this panel is interactive—clicking on a count reveals in-depth details, including specific server names and their status.
+
+Together, these three panels offer a comprehensive and interactive experience, making it easier for users to track automation compliance, investigate issues quickly, and make informed decisions.
+
+
+---
+
+Let me know if you'd like to add more technical details or tailor it for a presentation or report.
