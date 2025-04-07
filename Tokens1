@@ -1,0 +1,16 @@
+<panel>
+  <title>Linux Servers API View</title>
+  <table>
+    <search>
+      <query>your_base_search_here</query>
+    </search>
+    <option name="drilldown">row</option>
+    <drilldown>
+      <set token="clicked_location">$row.Server Location$</set>
+      <set token="clicked_total_servers">$row.Total Servers$</set>
+      <set token="clicked_api_used">$row.API Used$</set>
+      <!-- Add more tokens as needed -->
+      <link target="_blank">/app/your_app/target_dashboard?server_location=$row.Server Location$&total_servers=$row.Total Servers$&api_used=$row.API Used$</link>
+    </drilldown>
+  </table>
+</panel>
