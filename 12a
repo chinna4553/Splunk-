@@ -1,0 +1,12 @@
+index=abc
+| untable Name Month Value
+| eval epoch_month = strptime(Month, "%b-%Y")
+| eventstats min(epoch_month) as base_epoch by Name
+| eval base_value = if(epoch_month == base_epoch, Value, null())
+| eventstats first(base_value) as base_value by Name
+| eval trend = case(
+    Value > base_value, "UP",
+    Value < base_value, "DOWN",
+    Value == base_value, "NO CHANGE"
+)
+| table Name Month Value base_value trend
