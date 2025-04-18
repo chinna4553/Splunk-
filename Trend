@@ -1,0 +1,15 @@
+index=abc
+| eval row_id = _serial  ; this creates a row reference (optional for clarity)
+| foreach * [ eval month_<<FIELD>>='<<FIELD>>' ]
+| fields month_* row_id
+| untable row_id month value
+| eval epoch_month = strptime(month, "%b-%Y")
+| eventstats min(epoch_month) as base_epoch by row_id
+| eval base_month = if(epoch_month == base_epoch, value, null())
+| eventstats first(base_month) as base_value by row_id
+| eval trend = case(
+    value > base_value, "UP",
+    value < base_value, "DOWN",
+    value == base_value, "NO CHANGE"
+)
+| table row_id month value base_value trend
