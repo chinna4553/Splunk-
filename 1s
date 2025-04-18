@@ -1,0 +1,17 @@
+| foreach Jan-* Feb-* Mar-* Apr-* May-* Jun-* Jul-* Aug-* Sep-* Oct-* Nov-* Dec-* 
+    [ eval "<<FIELD>>" = '<<FIELD>>',
+      eval "<<MATCHED_FIELD>>" = case(
+        match("<<FIELD>>", "^Jan-"), '<<FIELD>>',
+        match("<<FIELD>>", "^Feb-"), '<<FIELD>>',
+        match("<<FIELD>>", "^Mar-"), '<<FIELD>>',
+        match("<<FIELD>>", "^Apr-"), '<<FIELD>>',
+        match("<<FIELD>>", "^May-"), '<<FIELD>>',
+        match("<<FIELD>>", "^Jun-"), '<<FIELD>>',
+        match("<<FIELD>>", "^Jul-"), '<<FIELD>>',
+        match("<<FIELD>>", "^Aug-"), '<<FIELD>>',
+        match("<<FIELD>>", "^Sep-"), '<<FIELD>>',
+        match("<<FIELD>>", "^Oct-"), '<<FIELD>>',
+        match("<<FIELD>>", "^Nov-"), '<<FIELD>>',
+        match("<<FIELD>>", "^Dec-"), '<<FIELD>>'
+      )
+    ]
