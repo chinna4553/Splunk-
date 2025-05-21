@@ -1,0 +1,22 @@
+*** Settings ***
+Library    SeleniumLibrary
+
+*** Variables ***
+${URL}     http://your-url-here.com
+
+*** Test Cases ***
+Select Master Checkbox And Row Checkbox
+    Open Browser    ${URL}    chrome
+    Maximize Browser Window
+
+    # Select the master checkbox in the table header
+    Click Element    xpath=//input[@type='checkbox' and contains(@class, 'masterCheckBox')]
+
+    # Wait for the checkboxes to be selected or verify one of them
+    Wait Until Element Is Visible    xpath=//table[@border='1']//tbody//tr[1]//td//input[@type='checkbox']
+    
+    # Optionally, check/uncheck a specific row checkbox
+    Select Checkbox    xpath=//table[@border='1']//tbody//tr[1]//td//input[@type='checkbox']
+
+    Sleep    2s
+    Close Browser
