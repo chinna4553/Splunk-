@@ -1,0 +1,13 @@
+Hardware Model-Wise Breakdown by Platform Dashboard
+
+This dashboard displays a hardware model-wise breakdown across three platforms: Linux, Windows, and ESXi. It presents data from the last three months, highlighting platform-wise hardware model counts.
+
+The dashboard consists of the following panels:
+	1.	Platform-Wise Hardware Model Counts
+	•	Separate panels have been created for Linux, Windows, and ESXi platforms.
+	2.	Manufacturer-Wise and OS Version-Wise Model Counts
+	•	This panel shows hardware models categorized by manufacturer and OS version.
+	3.	Detailed Server View
+	•	A tabular panel is included that provides detailed information about each server.
+
+This structured view helps users quickly analyze hardware distribution and trends across platforms and manufacturers.
