@@ -1,0 +1,13 @@
+This dashboard provides a detailed view in tabular format, displaying the following fields:
+	•	Hostname
+	•	EventCode
+	•	EventID
+	•	LogName
+	•	SourceName
+	•	Type
+	•	Keywords
+	•	TaskCategory
+	•	Message
+	•	_time
+
+This tabular view helps users analyze event-level details for better investigation and reporting.
