@@ -1,0 +1,5 @@
+I recently attended the Root Framework training, where I gained hands-on experience and a deeper understanding of its structure and implementation. As part of the training, I applied the concepts learned by writing test cases for two key portals:
+	1.	ESM Service Centric Enrichment – I focused on creating test cases that validate the enrichment features and ensure the workflows function as expected based on service-centric design.
+	2.	Self Service Portal – I developed test cases to validate the user interface and user experience, covering key functionalities like ticket submission, status tracking, and service request automation.
+
+This practical exposure helped reinforce my understanding of the Root Framework and improved my testing skills by applying them to real-world scenarios within the enterprise service management domain.
