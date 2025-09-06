@@ -1,0 +1,23 @@
+... <your base search> ...
+| eval DateEpoch = strptime(coalesce(DateT, Date1), "%d-%m-%Y")
+| stats max(eval(if(Env1=="PRODUCTION", DateEpoch, null()))) as ProdEpoch,
+        max(DateEpoch) as MaxEnvEpoch
+        by Host
+| eval Drift = if(MaxEnvEpoch >= ProdEpoch, "Yes", "No")
+| eval ProdDate = strftime(ProdEpoch, "%d-%m-%Y"), MaxEnvDate = strftime(MaxEnvEpoch, "%d-%m-%Y")
+| table Host, ProdDate, MaxEnvDate, Drift
+
+
+
+... <your base search> ...
+| eval ProdEpoch = strptime(Date1, "%d-%m-%Y")
+| eval DateT_clean = replace(DateT, "[\r\n]+", ";")        // convert newlines to semicolons
+| makemv delim=";" DateT_clean                             // make multivalue
+| mvexpand DateT_clean                                     // expand each date to its own row
+| eval DateT_epoch = strptime(DateT_clean, "%d-%m-%Y")
+| eval is_drift = if(DateT_epoch >= ProdEpoch, 1, 0)
+| stats max(is_drift) as any_drift by Env, Env1, Date1     // group back by the production row identity
+| eval Drift = if(any_drift==1, "Yes", "No")
+| table Env, Env1, Date1, Drift
+
+
